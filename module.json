@@ -1,0 +1,68 @@
+{
+  "id": "abomination-under-absalom",
+  "title": "Abomination Under Absalom",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Molotgor",
+      "email": "molotgog@gmail.com",
+      "discord": "molotgor"
+    }
+  ],
+  "flags": {
+    "abomination-under-absalom": {
+      "pf2e-homebrew": {
+        "creatureTraits": {
+          "enigmoid": {
+            "label": "Enigmoid",
+            "description": "Enigmoid."
+          },
+          "tulpa": {
+            "label": "Tulpa",
+            "description": "Tulpa."
+          }
+        },
+        "languages": {
+          "dulvalaran": "Dulvalaran"
+        }
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "monster-effects",
+      "label": "Monster Effects",
+      "path": "packs/monster-effects",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "monster-abilities",
+      "label": "Monster Abilities",
+      "path": "packs/monster-abilities",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    }
+  ]
+}
