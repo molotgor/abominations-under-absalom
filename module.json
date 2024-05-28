@@ -25,18 +25,32 @@
   "flags": {
     "abomination-under-absalom": {
       "pf2e-homebrew": {
+        "featTraits": {
+			"enigmoid": {
+				"label": "Enigmoid",
+				"description": "Enigmoid."
+			},
+			"astral": {
+				"label": "Astral",
+				"description": "Astral"
+			},
+			"judgment": {
+				"label": "Judgment",
+				"description": "A judgment is a free action or reaction that affects your claimant."
+			}
+        },
         "creatureTraits": {
-          "enigmoid": {
-            "label": "Enigmoid",
-            "description": "Enigmoid."
-          },
-          "tulpa": {
-            "label": "Tulpa",
-            "description": "Tulpa."
-          }
+			"enigmoid": {
+				"label": "Enigmoid",
+				"description": "Enigmoid."
+			},
+			"tulpa": {
+				"label": "Tulpa",
+				"description": "Tulpa."
+			}
         },
         "languages": {
-          "dulvalaran": "Dulvalaran"
+			"dulvalaran": "Dulvalaran"
         }
       }
     }
@@ -47,17 +61,83 @@
       "label": "Monster Effects",
       "path": "packs/monster-effects",
       "type": "Item",
+      "system": "pf2e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "pf2e"
+      }
     },
     {
       "name": "monster-abilities",
       "label": "Monster Abilities",
       "path": "packs/monster-abilities",
       "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "path": "packs/spells",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "feats",
+      "label": "Feats/Features",
+      "path": "packs/feats",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "enigmoid-ancestry",
+      "label": "Enigmoid Ancestry",
+      "path": "packs/enigmoid-ancestry",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "bestiary",
+      "label": "Bestiary",
+      "path": "packs/bestiary",
+      "type": "Actor",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rollable-tables",
+      "label": "Rollable Tables",
+      "path": "packs/rollable-tables",
+      "type": "RollTable",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
