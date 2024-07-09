@@ -1,10 +1,10 @@
 {
   "id": "abomination-under-absalom",
   "title": "Abomination Under Absalom",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "compatibility": {
-    "minimum": "11",
-    "verified": "11"
+    "minimum": "12",
+    "verified": "12"
   },
   "relationships": {
     "systems": [
@@ -19,38 +19,39 @@
     {
       "name": "Molotgor",
       "email": "molotgog@gmail.com",
-      "discord": "molotgor"
+      "discord": "molotgor",
+      "flags": {}
     }
   ],
   "flags": {
     "abomination-under-absalom": {
       "pf2e-homebrew": {
         "featTraits": {
-			"enigmoid": {
-				"label": "Enigmoid",
-				"description": "Enigmoid."
-			},
-			"astral": {
-				"label": "Astral",
-				"description": "Astral"
-			},
-			"judgment": {
-				"label": "Judgment",
-				"description": "A judgment is a free action or reaction that affects your claimant."
-			}
+          "enigmoid": {
+            "label": "Enigmoid",
+            "description": "Enigmoid."
+          },
+          "astral": {
+            "label": "Astral",
+            "description": "Astral"
+          },
+          "judgment": {
+            "label": "Judgment",
+            "description": "Judgment"
+          }
         },
         "creatureTraits": {
-			"enigmoid": {
-				"label": "Enigmoid",
-				"description": "Enigmoid."
-			},
-			"tulpa": {
-				"label": "Tulpa",
-				"description": "Tulpa."
-			}
+          "enigmoid": {
+            "label": "Enigmoid",
+            "description": "Enigmoid."
+          },
+          "tulpa": {
+            "label": "Tulpa",
+            "description": "Tulpa."
+          }
         },
         "languages": {
-			"dulvalaran": "Dulvalaran"
+          "dulvalaran": "Dulvalaran"
         }
       }
     }
@@ -58,7 +59,7 @@
   "packs": [
     {
       "name": "monster-effects",
-      "label": "Monster Effects",
+      "label": "Effects",
       "path": "packs/monster-effects",
       "type": "Item",
       "system": "pf2e",
@@ -69,7 +70,7 @@
     },
     {
       "name": "monster-abilities",
-      "label": "Monster Abilities",
+      "label": "Abilities",
       "path": "packs/monster-abilities",
       "type": "Item",
       "system": "pf2e",
@@ -138,11 +139,66 @@
       "label": "Rollable Tables",
       "path": "packs/rollable-tables",
       "type": "RollTable",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "adventure",
+      "label": "Adventure",
+      "path": "packs/adventure",
+      "type": "Adventure",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
       "system": "pf2e"
     }
-  ]
+  ],
+  "packFolders": [
+    {
+      "name": "Brian W. Lane Books",
+      "sorting": "a",
+      "packs": [],
+      "folders": [
+        {
+          "name": "Abomination under Absalom",
+          "sorting": "m",
+          "ownership": {
+            "PLAYER": "OBSERVER",
+            "ASSISTANT": "OWNER"
+          },
+          "packs": [
+            "monster-effects",
+            "monster-abilities",
+            "items",
+            "spells",
+            "feats",
+            "enigmoid-ancestry",
+            "bestiary",
+            "rollable-tables",
+            "macros",
+            "adventure"
+          ],
+          "folders": []
+        }
+      ]
+    }
+  ],
+  "url": "https://github.com/molotgor/abominations-under-absalom",
+  "manifest": "https://raw.githubusercontent.com/molotgor/abominations-under-absalom/master/module.json",
+  "download": "https://github.com/molotgor/abominations-under-absalom/archive/refs/heads/master.zip"
 }
